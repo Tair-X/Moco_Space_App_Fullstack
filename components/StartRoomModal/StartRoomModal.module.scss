@@ -1,0 +1,84 @@
+.overlay {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+  z-index: 2;
+}
+
+.modal {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  width: 500px;
+  padding: 40px;
+  border-radius: 20px;
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
+
+  button {
+    width: 150px;
+    img {
+      position: relative;
+      top: 2px;
+      margin-right: 7px;
+    }
+  }
+
+  h3 {
+    margin-top: 0;
+    margin-bottom: 10px;
+  }
+}
+
+.delimiter {
+  height: 1px;
+  background-color: #f6f6f4;
+  margin-bottom: 30px;
+}
+
+.inputTitle {
+  width: 100%;
+  height: 35px;
+  font-size: 26px;
+  border: 0;
+}
+
+.closeBtn {
+  position: absolute;
+  right: 40px;
+  opacity: 0.3;
+  cursor: pointer;
+
+  &:hover {
+    opacity: 0.8;
+  }
+}
+
+.roomType {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 130px;
+  height: 130px;
+  border-radius: 10px;
+  cursor: pointer;
+
+  &:hover {
+    background: #eff4fe;
+  }
+
+  h5 {
+    margin: 0;
+    margin-top: 10px;
+    font-size: 16px;
+  }
+}
+
+.roomTypeActive {
+  background: #eff4fe;
+}
